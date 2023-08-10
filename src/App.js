@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import EmailHeader from './components/EmailHeader';
+import EmailBody from './components/EmailBody';
+import HeaderMain from './components/HeaderMain.js'
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 function App() {
-  return (
+  return (  
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderMain/>
+      <hr></hr>
+      <div className="body">
+        <div className="subHeader">
+          <div className="subHeader-left">Unread</div>
+          <div className="subHeader-right">3<MdKeyboardArrowDown/></div>
+        </div>
+        <div className="emailList">
+          <div className="emailCard">
+            <EmailHeader/>
+            <EmailBody/>
+          </div>
+        </div>
+      </div>
     </div>
+    
   );
 }
 
