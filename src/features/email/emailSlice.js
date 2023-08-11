@@ -8,11 +8,12 @@ export const emailSlice = createSlice({
   },
   reducers: {
     deleteEmail: (state, action) => {
-        action.payload.forEach( (x, index) => {
-            if(x){
-                state.value.splice(index, 1)
-            }
-        })
+      let x      
+      for(x = action.payload.length; x >= 0; x--){
+        if(action.payload[x]){
+          state.value.splice(x, 1)
+        }
+      }
     }
   }
 })
