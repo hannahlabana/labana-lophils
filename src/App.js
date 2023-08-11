@@ -1,8 +1,8 @@
 import './App.css';
-import EmailHeader from './components/EmailHeader';
-import EmailBody from './components/EmailBody';
+import EmailCard from './components/EmailCard';
 import HeaderMain from './components/HeaderMain.js'
 import { MdKeyboardArrowDown } from "react-icons/md";
+
 
 function App() {
   return (  
@@ -15,10 +15,9 @@ function App() {
           <div className="subHeader-right">3<MdKeyboardArrowDown/></div>
         </div>
         <div className="emailList">
-          <div className="emailCard">
-            <EmailHeader/>
-            <EmailBody/>
-          </div>
+          {[...Array(3)].map(num => (
+            <EmailCard/>
+          ))}
         </div>
       </div>
     </div>

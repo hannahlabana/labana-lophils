@@ -5,6 +5,11 @@
   font-size: 14px;
 }
 
+.App {
+  width: 80%;
+  margin: auto;
+}
+
 hr {
   width: 98%;
   border: 1px solid #E8E8E8;
@@ -31,7 +36,7 @@ hr {
   width: 23%;
 }
 
-.header-left > input {
+input[type='checkbox'] {
   height: 18px;
   width: 18px;
 }
@@ -40,10 +45,6 @@ hr {
   margin-right: 0.5vw;
   align-items: center;
   display: flex;
-}
-
-.header-right > span {
-
 }
 
 .tag {
@@ -79,8 +80,9 @@ hr {
 
 .subHeader {
   justify-content: space-between;
+  align-items: center;
   display: flex;
-  margin: 0vw 1vw;
+  margin: 2vh 1vw;
 }
 
 .subHeader-left {
@@ -91,20 +93,222 @@ hr {
 .subHeader-right {
   background: #C5C5C5;
   border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  color: white;
+  padding: 5px;
+  justify-content: center;
+  padding-left: 7px;
+}
+
+.emailCard {
+  border: 2px solid #E8E8E8;
+  margin: 0vh 1vw;
+  border-radius: 8px;
+  padding: 1vh 1.3vh;
+}
+
+.emailCard-header {
+  align-items: center;
+  display: flex;
+  padding: 5px 15px;
+  justify-content: space-between;
+}
+
+.emailCard-header-left {
+  align-items: center;
+  display: flex;
+  width: 50%;
+  float: left;
+}
+
+.emailCard-header-left > * {
+  margin-right: 15px;
+}
+
+.vl2 {
+  border-left: 2px solid #E8E8E8;
+  height: 14px;
+  display: inline-block;
 }
 
 .dot {
-  height: 25px;
-  width: 25px;
-  background-color: green;
+  height: 15px;
+  width: 15px;
+  background-color: #7BB07F;
   border-radius: 50%;
   display: inline-block;
 }
 
-.emailHeader-left-date > span {
-  display: block;
-}
-.emailCard-body-left > span {
-  display:block;
+.emailCard-header-left-date {
+  background-color: #F8F9FA;
+  border: 2px solid #E8E8E8;
+  border-radius: 8px;
+  height: 45px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3px 13px;
 }
 
+.emailCard-header-left-date > span {
+  display: block;
+}
+
+.emailCard-header-date {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.emailCard-header-month {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.user {
+  background-color: #646464;
+  border-radius: 50%;
+  width: 19px;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  color: white;
+  padding: 5px;
+  justify-content: center;
+}
+
+.emailCard-body-left > span {
+  display: block;
+}
+
+span.title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 5px;
+  color: #646464;
+}
+
+span.ticket {
+  font-weight: 500;
+  font-size: 16px;
+  color: #646464;
+}
+
+.emailTitle-details {
+  display: flex;
+  align-items: center;
+}
+
+.emailTitle-details-name {
+  margin-right: 5px;
+}
+
+.emailTitle-details-info {
+  color: #929292;
+}
+
+.emailTitle-details-info > span {
+  margin-right: 10px;
+}
+
+.attachments {
+  display: inline-block;
+}
+
+.attachments > span {
+  color: rgb(57, 194, 228);
+  align-items: center;
+  display: flex;
+}
+
+.emailCard-header-right {
+  float: right;
+  display: flex;
+  width: 50%;
+  justify-content: right;
+  align-items: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 70%;
+  margin-right: 15px;
+}
+
+.tags-item {
+  float: right;
+  font-size: 12px;
+  background-color: #F5F9FA;
+  border: 2px solid #8ec9e4;
+  border-radius: 7px;
+  color: #70b8da;
+  margin: 2px 3px;
+  height: 18px;
+  align-items: center;
+  display: flex;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  background-color: #FEFAF0;
+  color: #e0c574;
+  height: 18px;
+  border-radius: 7px;
+}
+
+.collapseIcon {
+  font-size: 20px;
+  color: #C5C5C5;
+}
+
+.emailCard-body {
+  padding-bottom: 15px;
+}
+
+.emailCard-body > hr {
+  border: 1px dashed #E8E8E8;
+
+}
+
+.emailCard-body-text {
+  padding: 15px 15px 35px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.emailCard-body-text-left {
+  width: 40%;
+}
+
+.emailCard-body-text-right {
+  width: 100%;
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+}
+
+.emailCard-body-text-left > div {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.emailCard-body-text-left > span {
+  color: #929292;
+  font-size: 16px;
+}
+
+.emailCard-body-footer {
+  padding: 0px 15px;
+}
+
+.emailCard-body-footer > div > a {
+  text-decoration: none;
+}
