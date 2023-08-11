@@ -53,7 +53,7 @@ export default function EmailCard() {
             
             <div className="tag time">< AiOutlineClockCircle/>1 min</div>
             <div className="collapseIcon" onClick={handleClick}>
-                {isCollapse ? <MdKeyboardArrowRight size="20px"/> : <MdKeyboardArrowDown size="20px"/>}
+                {isCollapse ? <MdKeyboardArrowRight size="30px"/> : <MdKeyboardArrowDown size="30px"/>}
             </div>
         </div>
         </div>

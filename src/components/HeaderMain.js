@@ -9,10 +9,10 @@ export default function HeaderMain() {
     <div className="header">
         <div className="header-left">
           <input type="checkbox"></input>
-          <div className="button-save tag">save <IoMdSave/></div>
-          <div className="button-manage tag">manage filters <AiOutlineFilter/></div>
+          <div className="button-save tag">save<IoMdSave style={{ marginLeft: 5 }} /></div>
+          <div className="button-manage tag">manage filters<AiOutlineFilter style={{ marginLeft: 5 }}/></div>
           <div className="vl"></div>
-          <div className="button-delete tag">delete <IoMdTrash/></div>
+          <div className="button-delete tag">delete<IoMdTrash style={{ marginLeft: 5 }}/></div>
         </div>
         <div className="header-right">
           <MdKeyboardArrowLeft size='20px'/>
