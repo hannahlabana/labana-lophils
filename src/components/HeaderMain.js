@@ -38,7 +38,7 @@ export default function HeaderMain() {
         </div>
         <div className="header-right">
           <MdKeyboardArrowLeft size='20px'/>
-          50 of 150
+          { email.length } of { email.length }
           <MdKeyboardArrowRight size='20px'/>
         </div>
     </div>

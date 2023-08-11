@@ -85,7 +85,6 @@ export default function EmailCard({email, index}) {
                     <div className="emailCard-body-text-right">
                     {!isCollapse ? 
                         <div></div> :
-
                         (<div className="tags">
                             {
                                 tagString.map( tag => {
