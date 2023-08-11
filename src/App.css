@@ -107,8 +107,8 @@ input[type='checkbox'] {
 .subHeader-right {
   background: #C5C5C5;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   align-items: center;
   display: flex;
   color: white;
@@ -135,7 +135,7 @@ input[type='checkbox'] {
 .emailCard-header-left {
   align-items: center;
   display: flex;
-  width: 50%;
+  width: 70%;
   float: left;
 }
 
@@ -218,7 +218,7 @@ span.ticket {
 
 .emailTitle-details {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .emailTitle-details-name {
@@ -246,7 +246,7 @@ span.ticket {
 .emailCard-header-right {
   float: right;
   display: flex;
-  width: 50%;
+  width: 30%;
   justify-content: right;
   align-items: center;
 }
@@ -297,17 +297,17 @@ span.ticket {
 }
 
 .emailCard-body-text {
-  padding: 15px 30px 35px 30px;
+  padding: 15px 30px 5px 30px;
   display: flex;
   justify-content: space-between;
 }
 
 .emailCard-body-text-left {
-  width: 40%;
+  width: 25%;
 }
 
 .emailCard-body-text-right {
-  width: 100%;
+  width: 75%;
   display: flex;
   float: right;
   justify-content: flex-end;
@@ -322,6 +322,11 @@ span.ticket {
 .emailCard-body-text-left > span {
   color: #929292;
   font-size: 16px;
+}
+
+.emailCard-body-content {
+  margin: 35px 35px;
+  text-align: justify;
 }
 
 .emailCard-body-footer {
